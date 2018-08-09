@@ -46,10 +46,48 @@ button{
 }
 .results{
     margin: 30px auto;
-    border: 1px solid black;
     width: 900px;
 }
-
+.js-search-result{
+    margin-bottom: 15px;
+}
+.js-search-result a{
+    width: 700px;
+    text-decoration: none;
+    margin:0;
+    display: flex;
+    align-items: flex-start;
+}
+.js-search-result img{
+    width: 245px;
+    height: 140px;
+}
+.js-search-result img:hover{
+    cursor: pointer;
+}
+.video-details{
+    padding: 0 15px;
+    display:flex;
+    flex-direction: column;
+}
+.video-details h3{
+    margin:0;
+    color: black;
+}
+.video-details ul{
+    padding: 0;
+    margin: 0;
+}
+.video-details li{
+    display: inline-block;
+}
+.video-details li:nth-child(2):after{
+    content: ' \2022';
+}
+.video-description, .video-details li{
+    font-size: 12px;
+    color: gray;
+}
 @media screen and (max-width: 1080px){
     .results{
         width:600px;
